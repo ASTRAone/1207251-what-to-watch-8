@@ -6,11 +6,10 @@ const data = {
   title: 'The Grand Budapest Hotel',
   genre: 'Drama',
   releaseDate: 2014,
-
 };
 
 ReactDOM.render(
   <React.StrictMode>
-    <App data={data}/>
+    <App data={{...data}}/>
   </React.StrictMode>,
   document.getElementById('root'));

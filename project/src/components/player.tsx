@@ -109,7 +109,7 @@ function Player() {
                 max="100"
               >
               </progress>
-              <div className="player__toggler" style="left: 30%;">
+              <div className="player__toggler" style={{left: '30%'}}>
                 Toggler
               </div>
             </div>

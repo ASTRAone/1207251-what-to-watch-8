@@ -1,6 +1,14 @@
 import CardFilm from './cardFilm';
 
-function Main({title, genre, releaseDate}: any): JSX.Element {
+interface PropsMain {
+  data: {
+    title: string;
+    genre: string;
+    releaseDate: number;
+  };
+}
+
+function Main({data: {title, genre, releaseDate}}: PropsMain): JSX.Element {
   return (
     <>
       <div className="visually-hidden">

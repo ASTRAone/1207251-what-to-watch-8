@@ -1,7 +1,19 @@
 import Main from '../main';
 
-function App({data}: any): JSX.Element {
-  return <Main {...data}/>;
+interface PropsApp {
+  data: {
+    title: string;
+    genre: string;
+    releaseDate: number;
+  };
+}
+
+function App({ data }: PropsApp): JSX.Element {
+  return (
+    <Main
+      data={{...data}}
+    />
+  );
 }
 
 export default App;
