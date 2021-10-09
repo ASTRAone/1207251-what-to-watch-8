@@ -11,7 +11,7 @@ interface PropsApp {
 function App({ data }: PropsApp): JSX.Element {
   return (
     <Main
-      data={{...data}}
+      data={data}
     />
   );
 }
